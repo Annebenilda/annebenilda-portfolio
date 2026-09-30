@@ -1,0 +1,15 @@
+@media(max-width:900px){
+    .cards{
+        gap:30px;
+    }
+}
+
+@media(max-width:600px){
+    nav{
+        flex-wrap:wrap;
+    }
+
+    .card{
+        width:200px;
+    }
+}

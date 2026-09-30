@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="team.css">
+<link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+
+<div class="resume">
+
+    <h1 class="title">Interactive Resume</h1>
+
+
+    <div class="pattern-bg">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div> 
+
+<div class="stars">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+    <!-- radio navigation -->
+    <input type="radio" name="tab" id="home" checked>
+    <input type="radio" name="tab" id="about">
+    <input type="radio" name="tab" id="education">
+    <input type="radio" name="tab" id="skills">
+    <input type="radio" name="tab" id="team">
+    
+
+    
+    <nav>
+        <label for="home">Home</label>
+        <label for="about">About</label>
+        <label for="education">Education</label>
+        <label for="skills">Skills</label>
+        <label for="team">Team</label>
+    </nav>
+
+    <!-- HOME -->
+<section class="page home">
+    <div class="hero">
+        <h2 class="welcome-title">Welcome</h2>
+
+        <p class="welcome-sub">
+            A colorful interactive digital resume with animations,
+            modern UI, and creative design. Explore my profile,
+            technical skills, and amazing team.
+        </p>
+
+        <div class="explore">✨ Click About / Skills / Team to explore ✨</div>
+    </div>
+</section>
+
+
+    <!-- ABOUT -->
+   <section class="page about">
+    <h2 class="about-title">About Us</h2>
+
+    <div class="about-new">
+        <div class="about-line"></div>
+
+        <div class="about-content">
+            <p>
+                We are three second-year Information Technology students who are
+                passionate about building creative, user-friendly, and impactful
+                digital solutions. As aspiring developers, we continuously explore
+                modern technologies in web development, software engineering, cloud platforms, and
+                artificial intelligence.
+            </p>
+
+            <p>
+                Our team believes in collaboration, innovation, and learning by
+                doing. Through academic projects and self-driven practice, we aim
+                to strengthen our problem-solving abilities and create applications
+                that combine design, functionality, and performance.
+            </p>
+
+            <p>
+                This interactive portfolio is a reflection of our teamwork,
+                technical skills, and enthusiasm to grow as future IT professionals.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="page education">
+    <h2>Education</h2>
+
+    <div class="edu-cards">
+
+        <div class="edu-card">
+            <div class="edu-head">
+                <span>🎓</span>
+                <h3>Anne Benilda A</h3>
+            </div>
+
+            <p><strong>B.Tech – Information Technology</strong></p>
+            <p>2nd Year</p>
+            <p>Your College Name</p>
+            <p>2024 – 2028</p>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-head">
+                <span>🎓</span>
+                <h3>Harshitha S</h3>
+            </div>
+
+            <p><strong>B.Tech – Information Technology</strong></p>
+            <p>2nd Year</p>
+            <p>Your College Name</p>
+            <p>2024 – 2028</p>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-head">
+                <span>🎓</span>
+                <h3>Anusuya</h3>
+            </div>
+
+            <p><strong>B.Tech – Information Technology</strong></p>
+            <p>2nd Year</p>
+            <p>Your College Name</p>
+            <p>2024 – 2028</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- SKILLS -->
+    <section class="page skills">
+        <h2>Skills</h2>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><span style="width:70%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>C Python Java</p>
+            <div class="bar"><span style="width:50%"></span></div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+<section class="page team">
+    <h2>Our Team</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Anne Benilda A</h3>
+            <p>Project Lead</p>
+        </div>
+
+        <div class="card">
+            <h3>Harshitha S</h3>
+            <p>Frontend Developer</p>
+        </div>
+
+        <div class="card">
+            <h3>Anusuya</h3>
+            <p>UI / UX Designer</p>
+        </div>
+    </div>
+</section>
+
+</div>
+<!-- EDUCATION -->
+<section class="page education">
+    <h2>Education</h2>
+
+    <div class="edu-cards">
+
+        <div class="edu-card" onclick="openMember('anne.html')">
+            <div class="edu-head">
+                <span>🎓</span>
+                <h3>Anne Benilda A</h3>
+            </div>
+            <p><strong>B.Tech – Information Technology</strong></p>
+            <p>2nd Year</p>
+            <p>Your College Name</p>
+            <p>2024 – 2028</p>
+        </div>
+
+        <div class="edu-card" onclick="openMember('harshitha.html')">
+            <div class="edu-head">
+                <span>🎓</span>
+                <h3>Harshitha S</h3>
+            </div>
+            <p><strong>B.Tech – Information Technology</strong></p>
+            <p>2nd Year</p>
+            <p>Your College Name</p>
+            <p>2024 – 2028</p>
+        </div>
+
+        <div class="edu-card" onclick="openMember('anusuya.html')">
+            <div class="edu-head">
+                <span>🎓</span>
+                <h3>Anusuya</h3>
+            </div>
+            <p><strong>B.Tech – Information Technology</strong></p>
+            <p>2nd Year</p>
+            <p>Your College Name</p>
+            <p>2024 – 2028</p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+  function openMember(page) {
+    window.open(page, "_blank"); // opens in new tab
+  }
+</script>
+
+</body>
+</html>
